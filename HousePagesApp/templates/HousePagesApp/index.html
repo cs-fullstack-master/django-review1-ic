@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+{% for eachHouse in allHouses %}
+<a href="{% url 'details' eachHouse.id %}">{{ eachHouse.address }}</a>
+{% endfor %}
+</body>
+</html>
